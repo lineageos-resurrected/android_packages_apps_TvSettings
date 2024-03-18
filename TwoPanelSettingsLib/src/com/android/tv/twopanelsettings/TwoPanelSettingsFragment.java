@@ -112,6 +112,7 @@ public abstract class TwoPanelSettingsFragment extends Fragment implements
     private static final boolean DEFAULT_CHECK_SCROLL_STATE =
             ActivityManager.isLowRamDeviceStatic();
     private static final long CHECK_IDLE_STATE_MS = 100;
+    private PostShowPreviewRunnable mPostShowPreviewRunnable;
     private long mPreviewPanelCreationDelay = 0;
     private static final float PREVIEW_PANEL_ALPHA = 0.6f;
 
@@ -409,6 +410,7 @@ public abstract class TwoPanelSettingsFragment extends Fragment implements
                     listView.removeOnChildViewHolderSelectedListener(
                             mHasOnChildViewHolderSelectedListener.get(listView));
                     mHasOnChildViewHolderSelectedListener.remove(listView);
+                    mHandler.removeCallbacks(mPostShowPreviewRunnable);
                 }
             }
         }
@@ -530,21 +532,27 @@ public abstract class TwoPanelSettingsFragment extends Fragment implements
             mIsWaitingForUpdatingPreview = true;
             VerticalGridView listView = (VerticalGridView)
                     ((LeanbackPreferenceFragmentCompat) prefFragment).getListView();
-            mHandler.postDelayed(new PostShowPreviewRunnable(
-                    listView, pref, forceRefresh, panelIndex), mPreviewPanelCreationDelay);
+            if (mPostShowPreviewRunnable == null) {
+                mPostShowPreviewRunnable = new PostShowPreviewRunnable();
+            }
+            mHandler.removeCallbacks(mPostShowPreviewRunnable);
+            mPostShowPreviewRunnable.updatePreviewInfo(listView, pref, forceRefresh, panelIndex);
+            mHandler.postDelayed(mPostShowPreviewRunnable, mPreviewPanelCreationDelay);
         } else {
             handleFragmentTransactionWhenFocused(pref, forceRefresh, panelIndex);
         }
     }
 
     private final class PostShowPreviewRunnable implements Runnable {
-        private final VerticalGridView mListView;
-        private final Preference mPref;
-        private final boolean mForceFresh;
-        private final int mPanelIndex;
+        private VerticalGridView mListView;
+        private Preference mPref;
+        private boolean mForceFresh;
+        private int mPanelIndex;
 
-        PostShowPreviewRunnable(VerticalGridView listView, Preference pref, boolean forceFresh,
-                int panelIndex) {
+        PostShowPreviewRunnable() {}
+
+        public void updatePreviewInfo(
+                VerticalGridView listView, Preference pref, boolean forceFresh, int panelIndex) {
             this.mListView = listView;
             this.mPref = pref;
             this.mForceFresh = forceFresh;
