@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2017-2024 The LineageOS Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="system_reboot_confirm_cm">Neustart in:</string>
+    <string name="global_action_restart_system">System</string>
+    <string name="global_action_restart_recovery">Recovery</string>
+    <string name="global_action_restart_bootloader">Bootloader</string>
+    <string name="power_button_long_press_for_power_menu_action">Ein-/Aus-Menü öffnen</string>
+    <string name="power_button_long_press_for_assistant_action">Assistant öffnen</string>
+    <string name="inputs_volume_control_enabled">CEC-Lautstärkeregelung</string>
+    <string name="enable_adb_root">Root-Debugging</string>
+    <string name="enable_adb_root_summary">Android-Debugging als Root erlauben</string>
+    <string name="advanced_restart_title">Erweiterter Neustart</string>
+    <string name="advanced_restart_summary">Optionen für den Neustart in Recovery, Bootloader oder einen einfachen Neustart anzeigen</string>
+    <string name="adb_over_network">ADB über Netzwerk</string>
+    <string name="trust_category_features">Status</string>
+    <string name="trust_feature_selinux">SELinux</string>
+    <string name="trust_feature_selinux_value_enforcing">Enforcing</string>
+    <string name="trust_feature_selinux_value_disabled">Deaktiviert</string>
+    <string name="trust_feature_selinux_explain">SELinux bestimmt, welche Prozesse Zugriff auf welche Dateien/Verzeichnisse auf deinem Gerät haben.\nDadurch wird verhindert, dass Apps und Dienste auf Dateien zugreifen, die sie nicht benötigen: So werden potenziell böswillige Prozesse eingeschränkt und deine Sicherheit gewahrt.</string>
+    <string name="trust_feature_security_patches">Android-Sicherheitspatches</string>
+    <string name="trust_feature_security_patches_value_base">Plattform: %1$s\nVendor: %2$s</string>
+    <string name="trust_feature_security_patches_value_new">Auf dem neusten Stand</string>
+    <string name="trust_feature_security_patches_value_medium">Um einige Monate veraltet</string>
+    <string name="trust_feature_security_patches_value_old">Veraltet</string>
+    <string name="trust_feature_security_patches_explain">Sicherheitspatches werden monatlich von Google in Zusammenarbeit mit SoC-Herstellern veröffentlicht. Diese beheben Fehler, mittels derer bösartige Apps Sicherheitseinschränkungen umgehen und dein Gerät dauerhaft beschädigen können. Von Google bereitgestellte Patches werden jeden Monat auf alle unterstützten Geräte angewendet, aber Patches für proprietären Code können nur vom Hersteller deines Gerätes bereitgestellt werden. Um dein Gerät sicher zu halten, stelle sicher, dass dein LineageOS-Build immer auf dem neuesten Stand ist, und (falls möglich) stelle sicher, dass dein Hersteller-Image auf das neueste, von LineageOS empfohlene, aktualisiert ist.</string>
+    <string name="trust_feature_encryption">Verschlüsselung</string>
+    <string name="trust_feature_encryption_value_enabled">Aktiviert</string>
+    <string name="trust_feature_encryption_value_nolock">Displaysperre erforderlich</string>
+    <string name="trust_feature_encryption_value_disabled">Deaktiviert</string>
+    <string name="trust_category_tools">Datenschutz</string>
+    <string name="trust_notification_alerts_title">Sicherheitswarnungen</string>
+    <string name="trust_restrict_usb_title">USB einschränken</string>
+    <string name="trust_restrict_usb_always">Keine USB-Verbindungen zulassen</string>
+    <string name="trust_restrict_usb_disabled">USB-Verbindungen immer zulassen</string>
+    <string name="trust_onboarding_description">Trust hilft dir, dein Gerät sicher zu halten und schützt deine Privatsphäre.\nDas Trust-Symbol wird nur angezeigt, wenn der Inhalt der Seite überprüft wurde.</string>
+    <string name="trust_warnings_alerts_intro">Du kannst auswählen, auf welche Sicherheitsprobleme du hingewiesen werden möchtest. Aus Sicherheitsgründen empfiehlt es sich, alle Warnungen zu aktivieren</string>
+    <string name="trust_warnings_selinux">SELinux-Status</string>
+    <string name="trust_warnings_keys">Build-Signatur</string>
+    <string name="system_sleep_confirm">Jetzt in den Ruhezustand versetzen?</string>
+    <string name="shutdown_button_label">Ausschalten</string>
+    <string name="mtp_enable_warning">USB-Port 1 ist jetzt für den Zugriff von SHIELD auf einen PC als Mediengerät konfiguriert.\n\nAn diesem Port können nun keinerlei USB-Speichermedien und USB-Zubehör erkannt und auch keine Geräte mehr aufgeladen werden.</string>
+    <string name="mtp_retry_error">Fehlgeschlagen, bitte erneut versuchen.</string>
+    <string name="mtp_title">Dateien per USB auf einen Computer übertragen</string>
+    <string name="usb_debugging_enable_title">USB-Debugging aktiviert</string>
+    <string name="usb_debugging_enable_warning">USB-Port 1 ist jetzt für den Zugriff von SHIELD auf einen PC als Mediengerät konfiguriert.\n\nAn diesem Port können nun keinerlei USB-Speichermedien und USB-Zubehör erkannt und auch keine Geräte mehr aufgeladen werden.</string>
+</resources>
