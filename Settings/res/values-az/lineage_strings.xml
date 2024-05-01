@@ -59,7 +59,7 @@
     <string name="trust_restrict_usb_summary">Qulaqlıq, anbar, giriş cihazları (maus, klaviatura, joystiklər) və ADB kimi USB bağlantıları üçün kontrol dəstəyi</string>
     <string name="trust_restrict_usb_always">USB bağlantılarını rədd et</string>
     <string name="trust_restrict_usb_disabled">USB bağlantılarına həmişə icazə ver</string>
-    <string name="trust_onboarding_description">Trust, cihazınızı güvəndə saxlamağa və gizliliyinizi qorumağa kömək edir.\n Trust nişanı, yalnız səhifənin məzmunu doğrulananda göstərilir.</string>
+    <string name="trust_onboarding_description">Trust, cihazınızı güvəndə saxlamağa və gizliliyinizi qorumağa kömək edir.\n Trust ikonu, yalnız səhifənin məzmunu doğrulananda göstərilir.</string>
     <string name="trust_warnings_alerts_intro">Xəbərdarlıq almaq istədiyiniz güvənlik məsələlərini seçə bilərsiniz. Güvənlik üçün bütün xəbərdarlıqları fəallaşdırmağınız məsləhətdir</string>
     <string name="trust_warnings_selinux">SELinux statusu</string>
     <string name="trust_warnings_keys">Quruluş imzası</string>

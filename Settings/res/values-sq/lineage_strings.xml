@@ -52,14 +52,14 @@
     <string name="trust_feature_encryption_value_enabled">Aktivizuar</string>
     <string name="trust_feature_encryption_value_nolock">Nevojitet një kyçje e sigurtë e ekranit</string>
     <string name="trust_feature_encryption_value_disabled">E çaktivizuar</string>
-    <string name="trust_feature_encryption_explain">Kriptimi i paisjes shmang hyrjen tek tëdhënat e tua kur telefoni nuk ndizet në sistemin e Android. Kjo është veçanërisht e rëndësishme nëse të vidhet telefoni, pasi ndalon të tjerët të të lexojnë mesazhet, kontaktet dhe informacione të tjera private pa fjalëkalimin.\nPër të patur një kriptim më efektiv ju duhet të vendosni një fjalëkalim për kyçje të sigurtë të ekranit.</string>
+    <string name="trust_feature_encryption_explain">Kriptimi i paisjes shmang hyrjen tek të dhënat e tua kur telefoni nuk ndizet në sistemin e Android. Kjo është veçanërisht e rëndësishme nëse të vidhet telefoni, pasi ndalon të tjerët të të lexojnë mesazhet, kontaktet dhe informacione të tjera private pa fjalëkalimin.\n\nPër të patur një kriptim më efektiv ju duhet të vendosni një fjalëkalim për kyçje të sigurtë të ekranit.</string>
     <string name="trust_category_tools">Privacia</string>
     <string name="trust_notification_alerts_title">Alarmet e siguris</string>
     <string name="trust_restrict_usb_title">Kufizo USB</string>
     <string name="trust_restrict_usb_summary">Kontrollo mbështetjen për lidhjet USB si kufjet, pajisjet ruajtëse, hyrjen (mice, keyboards, joysticks) dhe ADB</string>
     <string name="trust_restrict_usb_always">Refuzoni lidhjet USB</string>
     <string name="trust_restrict_usb_disabled">Lejo gjithmonë lidhjet USB</string>
-    <string name="trust_onboarding_description">Trust të ndihmon të kesh paisjen tende të sigurtë dhe mbron privatësinë tënde.\n Ikona e Trust do të shfaqet vetëm kur përmbajtja e faqes të verifikohet.</string>
+    <string name="trust_onboarding_description">Trust të ndihmon të kesh paisjen tende të sigurtë dhe mbron privatësinë tënde.\n\n Ikona e Trust do të shfaqet vetëm kur përmbajtja e faqes të verifikohet.</string>
     <string name="trust_warnings_alerts_intro">Ju mund të zgjidhni se për cilat probleme sigurie të njoftoheni. Për sigurinë tuaj, sygjerohet të aktivizohen të gjitha</string>
     <string name="trust_warnings_selinux">Statusi i SELinux</string>
     <string name="trust_warnings_keys">Shënjimi i ndërtimit</string>
