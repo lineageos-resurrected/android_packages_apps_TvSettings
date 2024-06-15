@@ -66,6 +66,8 @@ android_library {
         "TvSettingsStaticLibs",
     ],
     platform_apis: true,
+    // TODO(b/319716205): re-enable use_resource_processor
+    use_resource_processor: false,
 }
 
 android_app {
@@ -90,6 +92,8 @@ android_app {
     static_libs: [
         "TvSettingsStaticLibs",
     ],
+    // TODO(b/319716205): re-enable use_resource_processor
+    use_resource_processor: false,
 }
 
 android_app {
@@ -117,8 +121,9 @@ android_app {
     static_libs: [
         "TvSettingsStaticLibs",
     ],
+    // TODO(b/319716205): re-enable use_resource_processor
+    use_resource_processor: false,
 }
-
 
 // Two-panel TvSettings
 android_app {
@@ -155,6 +160,8 @@ android_app {
             "com.android.tv.twopanelsettingsoverlay.*",
         ],
     },
+    // TODO(b/319716205): re-enable use_resource_processor
+    use_resource_processor: false,
 }
 
 // Two-panel TvSettings 0 Debug
@@ -188,4 +195,6 @@ android_app {
     static_libs: [
         "TvSettingsStaticLibs",
     ],
+    // TODO(b/319716205): re-enable use_resource_processor
+    use_resource_processor: false,
 }
